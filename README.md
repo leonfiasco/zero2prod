@@ -92,4 +92,3 @@ Through building this project, I've gained:
 3. Run database migrations: `sqlx migrate run`
 4. Start the server: `cargo run`
 
-## Project Structure
