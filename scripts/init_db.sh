@@ -17,7 +17,7 @@ DB_PORT="${POSTGRES_PORT:=5432}"
 SUPERUSER="${SUPERUSER:=postgres}"
 SUPERUSER_PWD="${SUPERUSER_PWD:=password}"
 APP_USER="${APP_USER:=app}"
-APP_USER_PWD="${APP_USER_PWD:=secret}"
+APP_USER_PWD="${APP_USER_PWD:=passwordca}"
 APP_DB_NAME="${APP_DB_NAME:=newsletter}"
 CONTAINER_NAME="postgres"
 
