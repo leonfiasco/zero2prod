@@ -166,7 +166,7 @@ async fn spawn_app() -> TestApp {
 pub async fn configure_database(config: &DatabaseSettings) -> PgPool {
     // Create database
     let maintenance_settings = DatabaseSettings {
-        database_name: "zero2prod".to_string(),
+        database_name: "newsletter".to_string(),
         username: "postgres".to_string(),
         password: Secret::new("password".to_string()),
         ..(*config).clone()
