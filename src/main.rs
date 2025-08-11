@@ -25,10 +25,9 @@ async fn main() -> Result<(), std::io::Error> {
         // `connect_lazy_with` instead of `connect_lazy`
         .connect_lazy_with(configuration.database.connect_options());
     let address = format!(
-    "{}:{}",
-    std::env::var("HOST").unwrap_or(configuration.application.host),
-    std::env::var("PORT").unwrap_or(configuration.application.port.to_string())
-);
+        "{}:{}",
+        configuration.application.host, configuration.application.port
+    );
     let listener = TcpListener::bind(address)?;
     run(listener, connection_pool)?.await
 }
